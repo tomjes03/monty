@@ -6,6 +6,7 @@
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void pint_handler(stack_t **stack, unsigned int line_number)
 {
 stack_t *head = *stack;
@@ -23,6 +24,7 @@ printf("%d\n", head->n);
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void pop_handler(stack_t **stack, unsigned int line_number)
 {
 stack_t *temp = *stack;
@@ -40,6 +42,7 @@ delete_dnodeint_at_index(stack, 0);
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void swap_handler(stack_t **stack, unsigned int line_number)
 {
 stack_t *temp = *stack, *node = NULL;
@@ -67,6 +70,7 @@ exit(EXIT_FAILURE);
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void add_handler(stack_t **stack, unsigned int line_number)
 {
 int sum = 0;
@@ -96,6 +100,7 @@ exit(EXIT_FAILURE);
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void nop_handler(stack_t **stack, unsigned int line_number)
 {
 (void)stack;
