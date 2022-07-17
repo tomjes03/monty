@@ -10,6 +10,7 @@
  *
  * Return: address of the new node, or NULL if it failed
  */
+
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 unsigned int i;
@@ -47,6 +48,7 @@ return (NULL);
  *
  * Return: the address of the new element, or NULL if it failed
  */
+
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 dlistint_t *new;
@@ -75,6 +77,7 @@ return (new);
  * free_dlistint - frees a doubly linked list
  * @head: pointer to the list to free
  */
+
 void free_dlistint(dlistint_t *head)
 {
 dlistint_t *temp;
