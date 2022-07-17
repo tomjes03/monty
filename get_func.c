@@ -7,12 +7,13 @@
  *
  * Return: pointer to the selected function, or NULL on failure
  */
+
 void (*get_func(char **parsed))(stack_t **, unsigned int)
 {
 instruction_t func_arr[] = {
 {"push", push_handler},
 {"pall", pall_handler},
-{"pint", pint_handler},
+i{"pint", pint_handler},
 {"pop", pop_handler},
 {"swap", swap_handler},
 {"add", add_handler},
@@ -45,6 +46,7 @@ return (NULL);
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void push_handler(stack_t **stack, unsigned int line_number)
 {
 stack_t *new;
@@ -82,6 +84,7 @@ exit(EXIT_FAILURE);
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void pall_handler(stack_t **stack, unsigned int line_number)
 {
 (void)line_number;
