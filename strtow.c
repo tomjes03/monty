@@ -7,6 +7,7 @@
  *
  * Return: number of words
  */
+
 int count_word(char *s)
 {
 int flag, c, w;
@@ -24,6 +25,7 @@ w++;
 }
 return (w);
 }
+
 /**
  * **strtow - splits a string into words
  * @str: string to split
@@ -31,6 +33,7 @@ return (w);
  * Return: pointer to an array of strings (Success)
  * or NULL (Error)
  */
+
 char **strtow(char *str)
 {
 char **matrix, *tmp;
@@ -71,6 +74,7 @@ return (matrix);
  * free_everything - frees arrays of strings
  * @args: array of strings to free
  */
+
 void free_everything(char **args)
 {
 int i;
