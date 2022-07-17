@@ -6,6 +6,7 @@
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void rotl_handler(stack_t **stack, unsigned int line_number)
 {
 stack_t *temp = *stack;
@@ -24,6 +25,7 @@ add_dnodeint_end(stack, num);
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void rotr_handler(stack_t **stack, unsigned int line_number)
 {
 stack_t *temp = *stack;
@@ -42,6 +44,7 @@ add_dnodeint(stack, num);
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void stack_handler(stack_t **stack, unsigned int line_number)
 {
 (void)stack;
@@ -54,6 +57,7 @@ data.qflag = 0;
  * @stack: double pointer to the stack to push to
  * @line_number: number of the line in the file
  */
+
 void queue_handler(stack_t **stack, unsigned int line_number)
 {
 (void)stack;
